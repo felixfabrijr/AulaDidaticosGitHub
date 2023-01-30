@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 
 namespace ConsoleApp2
 {
@@ -7,7 +7,22 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Aula teste GitHub");
+            foreach (var i in Fibonacci().Take(20))
+            {
+                Console.WriteLine(i);
+            }
+        }
+
+        private static IEnumerable<int> Fibonacci()
+        {
+            int current = 1, next = 1;
+
+            while (true)
+            {
+                yield return current;
+                next = current + (current = next);
+            }
         }
     }
 }
+
