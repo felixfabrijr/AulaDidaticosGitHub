@@ -7,7 +7,7 @@ namespace ConsoleApp2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("")
+            Console.WriteLine("Aula teste GitHub");
         }
     }
 }
